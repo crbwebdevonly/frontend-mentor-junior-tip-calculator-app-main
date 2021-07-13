@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+               rel="stylesheet"
+          />
+
+          <link
+               rel="icon"
+               type="image/png"
+               sizes="32x32"
+               href="./images/favicon-32x32.png"
+          />
+          <link rel="stylesheet" href="./scss/style.css" />
+          <script src="./script.js" defer></script>
+          <title>Frontend Mentor | Tip calculator app</title>
+
+          <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+          <style>
+               .attribution {
+                    font-size: 11px;
+                    text-align: center;
+               }
+               .attribution a {
+                    color: hsl(228, 45%, 44%);
+               }
+          </style>
+     </head>
+     <body>
+          <div class="outer-container">
+               <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+               <div class="inner-container">
+                    <div class="left">
+                         <div class="left-1">
+                              <h3>Bill</h3>
+
+                              <div class="input-wrap">
+                                   <input type="number" id="bill" value="0"/>
+                                   <div class="icon-wrap">
+                                        <img
+                                             src="./images/icon-dollar.svg"
+                                             alt=""
+                                        />
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="left-2">
+                              <h3>Select Tip %</h3>
+                              <div class="tip-buttons-wrap">
+                                   <button class="my-button ">5%</button>
+                                   <button class="my-button">10%</button>
+                                   <button class="my-button">15%</button>
+                                   <button class="my-button">25%</button>
+                                   <button class="my-button">50%</button>
+                                   <button class="my-button ">Custom
+                                        <input type="number" class="custom-input hide" id="custom-input" >
+                                   </button>
+                              </div>
+                         </div>
+                         <div class="left-3">
+                              <h3>Number of People</h3>
+						<div class="input-wrap">
+                                   <input  type="number" id="people" value="0" />
+                                   <div class="icon-wrap">
+                                        <img
+                                             src="./images/icon-person.svg"
+                                             alt=""
+                                        />
+                                   </div>
+                                   <div class="error" id="error-message">
+                                        Can't be zero
+                                   </div>
+                                   <div class="error-border" id="error-border"></div>
+                              </div>
+                              
+                         </div>
+                    </div>
+                    <div class="right">
+                         <div class="item-wrap">
+                              <div class="title">
+                                   Tip Amount<span> / person</span>
+                              </div>
+                              <div class="amount" id="tip-amount">$0.00</div>
+                         </div>
+                         <div class="item-wrap">
+                              <div class="title">Total<span>/ person</span></div>
+                              <div class="amount" id="total-amount">$0.00</div>
+                         </div>
+                         <button  onclick="window.location.reload()" class="my-button reset">Reset</button>
+                    </div>
+               </div>
+          </div>
+
+          <div class="attribution">
+               Challenge by
+               <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+               >. Coded by <a href="#">crb</a>.
+          </div>
+     </body>
+</html>
